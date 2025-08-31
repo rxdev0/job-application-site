@@ -1,0 +1,148 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: -webkit-linear-gradient(120deg, #313131 50%, #4f5355 50%);
+    height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin:0 auto;
+    margin-top: 50px;
+    box-shadow:8px 6px 10px rgba(1,1,1,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title_small {
+    font-size: 20px;
+    color: gray;
+}
+
+.form_container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.form_control {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+label:after {
+    content: "* ";
+    color: rgb(194, 2, 2);
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus {
+    outline-color: rgb(38, 0, 255);
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: rgb(38, 0, 255);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s ease;
+
+}
+
+button:hover {
+    background: #ccc;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.textarea_control {
+    grid-column: 1 / span 2;
+    font-weight: bolder;
+}
+
+.textarea_control textarea {
+    width: 100%;
+}
+
+@media (max-width: 460px) {
+    .textarea_control {
+        grid-column: 1 / span 1;
+    }
+}
+
+h1 {
+    max-width: 600px;
+    padding: 10px;
+    background-color: #dfdede;
+    margin:0 auto;
+    margin-top: 1px;
+    box-shadow:8px 6px 10px rgba(1,1,1,0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.8s ease;
+
+}
+
+h1:hover {
+    background: #ccc;
+    transition: 1s ease;
+}
+
+input[type="date"],
+input[type="file"],
+select {
+    cursor: pointer;
+}
+
+#copyright {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    z-index: 100;
+}
