@@ -4,7 +4,7 @@ this is a job application form i made as my third project this month. i'm 13 and
 
 ## how i built this
 
-started with a simplilearn html tutorial from their "introduction to html" course, but then i got carried away and added a bunch of my own stuff. the basic form structure came from the tutorial, but everything else is me figuring things out.
+started with a simplilearn html from their "introduction to html" course, but then i got carried away and added a bunch of my own stuff. the basic form structure came from the couse, but everything else is me figuring things out.
 
 ## what it does
 
